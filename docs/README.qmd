@@ -89,7 +89,11 @@ uv run pre-commit install
 make test
 ```
 
-To generate a code coverage badge and see your code coverage, run `./scripts/coverage.sh`
+To generate a code coverage badge and see your code coverage, run:
+
+```bash
+make coverage
+```
 
 <br>
 
