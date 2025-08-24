@@ -94,7 +94,7 @@ make coverage
 ### Documentation website
 
 The documentation is based on
-[mkdocstrings](https://mkdocstrings.github.io/), but feel free to use
+[mkdocs material](https://squidfunk.github.io/mkdocs-material/), but feel free to use
 another framework.
 
 You only have to set up [GitHub Pages](https://pages.github.com/) to the
