@@ -24,7 +24,7 @@ jobs:
         run: uv sync --all-groups
 
       - name: Run Ruff format check
-        run: uv ruff format --check .
+        run: uv run ruff format --check .
 
       - name: Run Ruff linting and auto-fix
-        run: uv ruff check --fix .
+        run: uv run ruff check --fix .
