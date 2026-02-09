@@ -30,6 +30,7 @@ nav:
   - Reference:
       - reference/add_digit.md
   - Contributing: contributing.md
+  - Changelog: changelog.md
 
 extra_css:
   - stylesheets/style.css

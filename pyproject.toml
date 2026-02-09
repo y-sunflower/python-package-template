@@ -9,7 +9,7 @@ authors = [
   { name="your_name", email="your_name@mail.com" },
 ]
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
@@ -39,12 +39,6 @@ dev = [
     "coverage>=7.9.1",
     "genbadge>=1.1.2",
     "prek>=0.3.2",
-]
-quarto = [
-    "jupyter>=1.1.1",
-    "nbclient>=0.10.2",
-    "nbformat>=5.10.4",
-    "pyyaml>=6.0.2",
 ]
 
 [project.urls]

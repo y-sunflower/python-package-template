@@ -1,9 +1,9 @@
-name: Check Static Typing
+name: Check code formatting
 
 on:
+  push:
+    branches: [main]
   pull_request:
-    branches:
-      - main
 
 jobs:
   check-formatting:
@@ -13,6 +13,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - uses: actions/checkout@v4
+
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
@@ -21,5 +23,8 @@ jobs:
       - name: Install the project
         run: uv sync --all-groups
 
-      - name: Run tests
-        run: uv run ty check
+      - name: Run Ruff format check
+        run: uv ruff format --check .
+
+      - name: Run Ruff linting and auto-fix
+        run: uv ruff check --fix .
