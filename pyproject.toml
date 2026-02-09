@@ -32,13 +32,13 @@ package_name = { workspace = true }
 
 [dependency-groups]
 dev = [
-    "pre-commit>=4.2.0",
     "pytest>=8.3.5",
     "ruff>=0.11.13",
     "mkdocs-material>=9.6.9",
     "mkdocstrings-python>=1.16.5",
     "coverage>=7.9.1",
     "genbadge>=1.1.2",
+    "prek>=0.3.2",
 ]
 quarto = [
     "jupyter>=1.1.1",
